@@ -1,0 +1,58 @@
+﻿2025-05-11T13:47:07.3228759Z Current runner version: '2.323.0'
+2025-05-11T13:47:07.3255607Z Runner name: 'ubuntuserv'
+2025-05-11T13:47:07.3259166Z Machine name: 'ubuntuserv'
+2025-05-11T13:47:07.3271789Z ##[group]GITHUB_TOKEN Permissions
+2025-05-11T13:47:07.3281035Z Contents: read
+2025-05-11T13:47:07.3283099Z Metadata: read
+2025-05-11T13:47:07.3285335Z Packages: read
+2025-05-11T13:47:07.3287397Z ##[endgroup]
+2025-05-11T13:47:07.3855404Z Secret source: Actions
+2025-05-11T13:47:07.3858870Z Prepare workflow directory
+2025-05-11T13:47:09.0776998Z Prepare all required actions
+2025-05-11T13:47:09.2397151Z Getting action download info
+2025-05-11T13:47:11.3321328Z Download action repository 'actions/checkout@v4' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2025-05-11T13:47:16.7000808Z Complete job name: integration_testing
+2025-05-11T13:47:17.5641695Z ##[group]Run actions/checkout@v4
+2025-05-11T13:47:17.5646554Z with:
+2025-05-11T13:47:17.5648036Z   repository: AlexanderBobrenko/var_keeper
+2025-05-11T13:47:17.5650380Z   token: ***
+2025-05-11T13:47:17.5651774Z   ssh-strict: true
+2025-05-11T13:47:17.5652968Z   ssh-user: git
+2025-05-11T13:47:17.5654227Z   persist-credentials: true
+2025-05-11T13:47:17.5655584Z   clean: true
+2025-05-11T13:47:17.5656791Z   sparse-checkout-cone-mode: true
+2025-05-11T13:47:17.5658268Z   fetch-depth: 1
+2025-05-11T13:47:17.5659453Z   fetch-tags: false
+2025-05-11T13:47:17.5660689Z   show-progress: true
+2025-05-11T13:47:17.5661896Z   lfs: false
+2025-05-11T13:47:17.5664344Z   submodules: false
+2025-05-11T13:47:17.5665390Z   set-safe-directory: true
+2025-05-11T13:47:17.5671219Z ##[endgroup]
+2025-05-11T13:47:24.6327206Z Syncing repository: AlexanderBobrenko/var_keeper
+2025-05-11T13:47:25.0821472Z ##[group]Getting Git version info
+2025-05-11T13:47:25.0827624Z Working directory is '/home/sanqe/var_keeper/actions-runner/_work/var_keeper/var_keeper'
+2025-05-11T13:47:25.1876780Z [command]/usr/bin/git version
+2025-05-11T13:47:25.2744249Z git version 2.43.0
+2025-05-11T13:47:25.3526949Z ##[endgroup]
+2025-05-11T13:47:25.4678709Z Copying '/home/sanqe/.gitconfig' to '/home/sanqe/var_keeper/actions-runner/_work/_temp/d5f1e812-c0f5-431c-a59b-7be4f0c76e16/.gitconfig'
+2025-05-11T13:47:25.5440229Z Temporarily overriding HOME='/home/sanqe/var_keeper/actions-runner/_work/_temp/d5f1e812-c0f5-431c-a59b-7be4f0c76e16' before making global git config changes
+2025-05-11T13:47:25.5797734Z Adding repository directory to the temporary git global config as a safe directory
+2025-05-11T13:47:25.5854968Z [command]/usr/bin/git config --global --add safe.directory /home/sanqe/var_keeper/actions-runner/_work/var_keeper/var_keeper
+2025-05-11T13:47:25.7582286Z [command]/usr/bin/git config --local --get remote.origin.url
+2025-05-11T13:47:26.0630677Z https://github.com/AlexanderBobrenko/var_keeper
+2025-05-11T13:47:26.2442932Z ##[group]Removing previously created refs, to avoid conflicts
+2025-05-11T13:47:26.2474016Z [command]/usr/bin/git rev-parse --symbolic-full-name --verify --quiet HEAD
+2025-05-11T13:47:26.3785890Z HEAD
+2025-05-11T13:47:26.7863515Z ##[endgroup]
+2025-05-11T13:47:26.7867752Z [command]/usr/bin/git submodule status
+2025-05-11T13:47:28.4125689Z ##[group]Cleaning the repository
+2025-05-11T13:47:28.4513862Z [command]/usr/bin/git clean -ffdx
+2025-05-11T13:47:28.6948692Z [command]/usr/bin/git reset --hard HEAD
+2025-05-11T13:47:29.3368341Z HEAD is now at 8dd5931 Merge e8af8f151b8b707aa05bda79036534b2bb1e5382 into 81da9ac8fc47acdb94e3d154a3b178a2315cb99f
+2025-05-11T13:47:29.3380924Z ##[endgroup]
+2025-05-11T13:47:29.3384724Z ##[group]Disabling automatic garbage collection
+2025-05-11T13:47:29.3587245Z [command]/usr/bin/git config --local gc.auto 0
+2025-05-11T13:47:29.5438677Z ##[endgroup]
+2025-05-11T13:47:29.5771215Z ##[group]Setting up auth
+2025-05-11T13:47:29.6285127Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-05-11T13:47:29.7709116Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.ssh
