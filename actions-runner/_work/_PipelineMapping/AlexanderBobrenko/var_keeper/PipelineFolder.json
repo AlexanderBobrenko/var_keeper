@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "AlexanderBobrenko/var_keeper",
+  "pipelineDirectory": "var_keeper",
+  "workspaceDirectory": "var_keeper/var_keeper",
+  "repositories": {
+    "AlexanderBobrenko/var_keeper": {
+      "repositoryPath": "var_keeper/var_keeper",
+      "lastRunOn": "05/11/2025 11:23:59 +00:00"
+    }
+  },
+  "lastRunOn": "05/11/2025 11:25:24 +00:00"
+}
