@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 23,
+  "agentName": "ubuntuserv",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus3.actions.githubusercontent.com/UC6u8IHClXaPHgpOYOgJmpVFWOqPEU8JhvZcxLdyDjnHvviJVP/",
+  "gitHubUrl": "https://github.com/AlexanderBobrenko/var_keeper",
+  "workFolder": "_work"
+}
